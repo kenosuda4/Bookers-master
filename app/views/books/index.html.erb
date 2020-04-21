@@ -34,6 +34,7 @@
   <%= form_for(@book) do |f| %>
     <% if @book.errors.any? %>
        <ul>
+          error
           <% @book.errors.full_messages.each do |message| %>
             <li><%= message %></li>
           <% end %>
@@ -50,7 +51,7 @@
     <%= f.text_area :body %>
     </div>
 
-    <p><%= f.submit '投稿' %><p>
+    <p><%= f.submit 'Create Book' %><p>
  
   <% end %>
  </div>

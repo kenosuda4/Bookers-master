@@ -33,12 +33,12 @@
  <div class=form-index>
   <%= form_for(@book) do |f| %>
     <% if @book.errors.any? %>
-<ul>
-<% @book.errors.full_messages.each do |message| %>
-<li><%= message %></li>
-<% end %>
-</ul>
-<% end %>
+       <ul>
+          <% @book.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+       </ul>
+   <% end %>
 
     <h4>Title</h4>
     <div class="text-field">
